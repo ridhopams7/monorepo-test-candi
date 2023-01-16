@@ -24,6 +24,7 @@ $ candi -init
 $ make proto service={{service_name}}
 ```
 
+
 ### If using SQL database, run this commands for migration
 
 Create new migration:
