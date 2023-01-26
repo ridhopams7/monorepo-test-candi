@@ -6,6 +6,7 @@ import (
 	"sync"
 
 	// @candi:serviceImport
+	"monorepo/sdk/warehoouse"
 )
 
 // Option func type
@@ -34,14 +35,26 @@ func GetSDK() SDK {
 
 // @candi:construct
 
+// SetWarehoouse option func
+func SetWarehoouse(warehoouse warehoouse.Warehoouse) Option {
+	return func(s *sdkInstance) {
+		s.warehoouse = warehoouse
+	}
+}
+
 // SDK instance abstraction
 type SDK interface {
 	// @candi:serviceMethod
+	Warehoouse() warehoouse.Warehoouse
 }
 
 // sdkInstance implementation
 type sdkInstance struct {
 	// @candi:serviceField
+	warehoouse	warehoouse.Warehoouse
 }
 
 // @candi:instanceMethod
+func (s *sdkInstance) Warehoouse() warehoouse.Warehoouse {
+	return s.warehoouse
+}

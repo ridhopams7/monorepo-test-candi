@@ -1,0 +1,1 @@
+CompileDaemon --build="go build services/warehoouse/main.go" --command=./warehoouse
