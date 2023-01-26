@@ -1,0 +1,16 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"title": "JSON Schema for save",
+	"type": "object",
+	"properties": {
+		"id": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string",
+			"minLength": 1
+		}
+	},
+	"required": [ "title" ],
+	"additionalProperties": false
+}

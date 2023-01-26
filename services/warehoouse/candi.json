@@ -1,0 +1,33 @@
+{
+     "GoVersion": "1.16",
+     "Version": "v1.13.11",
+     "LibraryName": "github.com/golangid/candi",
+     "ServiceName": "warehoouse",
+     "PackagePrefix": "monorepo/services/warehoouse",
+     "ProtoSource": "monorepo/sdk/warehoouse/proto",
+     "Owner": "",
+     "License": "",
+     "Year": 2023,
+     "IsMonorepo": true,
+     "RestHandler": true,
+     "GRPCHandler": false,
+     "GraphQLHandler": false,
+     "KafkaHandler": false,
+     "SchedulerHandler": false,
+     "RedisSubsHandler": false,
+     "TaskQueueHandler": false,
+     "PostgresListenerHandler": false,
+     "RabbitMQHandler": false,
+     "IsWorkerActive": false,
+     "RedisDeps": false,
+     "SQLDeps": true,
+     "MongoDeps": false,
+     "SQLUseGORM": true,
+     "ArangoDeps": false,
+     "SQLDriver": "postgres",
+     "Modules": [
+          {
+               "ModuleName": "brand"
+          }
+     ]
+}
